@@ -1,0 +1,52 @@
+{{#>layout}}
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+  <tbody>
+    <tr style=" line-height: 30px;">
+      <td style="padding:30px 50px 0px;" colspan="2">
+        <p style="font-size: 16px; color: #33353ad9;">
+          We need to verify this email address for your Savvy account. Paste this token into the field on your
+          verification page.
+        </p>
+      </td>
+    </tr>
+    <tr style="height: 50px; text-align: center;">
+      <td colspan="2">
+        <table border="0" cellspacing="0" cellpadding="0" style="padding: 0; margin: 0 auto;">
+          <tbody>
+            <tr>
+              <td height="45" style="font-size: 18px; font-family: sans-serif; font-weight: bold;">
+                <p
+                  style="display: inline-block; margin: 0px; padding: 5px; font-size: 18px; letter-spacing: 2px; font-weight: 500; text-transform: uppercase; background: #CCCCCC; color: #000000">
+                  {{token}}
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr style=" line-height: 30px;">
+      <td style="padding: 0 50px;" colspan="2">
+        <p style="font-size: 16px; color: #33353ad9;">
+          You may also verify directly with this button:
+        </p>
+      </td>
+    </tr>
+    <tr style="height: 50px; text-align: center;">
+      <td colspan="2">
+        <table bgcolor="#00BFBA" border="0" cellspacing="0" cellpadding="0"
+          style="padding: 0 30px; margin: 0 auto; border-radius: 5px;">
+          <tbody>
+            <tr>
+              <td height="45" style="font-size: 18px; font-family: sans-serif; font-weight: bold;">
+                <a href="{{link}}" target="_blank"
+                  style="display: inline-block; color: #FFFFFF; text-decoration: none; width: 100%; height: 100%; text-align: center; line-height: 45px;">Verify</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{{/layout}}

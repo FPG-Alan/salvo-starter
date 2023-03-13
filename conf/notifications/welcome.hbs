@@ -1,0 +1,513 @@
+{{!-- <html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Update on Savvy</title>
+    <style>
+      @import
+      url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Montserrat:wght@400");
+      @font-face { font-family: "Google Sans"; font-weight: 400; src:
+      url("https://fonts.gstatic.com/s/googlesans/v9/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2");
+      } @font-face { font-family: "Google Sans"; font-weight: bolder; src:
+      url("https://fonts.gstatic.com/s/googlesans/v9/4UabrENHsxJlGDuGo1OIlLU94YtzCwY.woff2");
+      }
+    </style>
+    <style>
+      .content img { max-width: 410px; } .content-html p { margin-top: 5px; }
+      .content-html td { padding: 0; }
+    </style>
+    <style>
+      @media (min-width: 720px) { .header-space { height: 16px; min-height:
+      16px; } .email-wrapper { width: 720px; margin-bottom: 20px; box-shadow: 0
+      0 10px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden;
+      background-color: #ffffff; } .main-img { padding-top: 40px;
+      vertical-align: top; display: table-cell; width: 220px; } .main-text {
+      vertical-align: middle; display: table-cell; } .email-text { padding: 20px
+      80px; } .order-table { width: 640px; margin: 0 40px; border-radius: 5px;
+      background-color: #ffffff; box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1); }
+      .order-table-block tr { display: table; width: 100%; } .order-table-block
+      tr td { display: table-cell; } }
+    </style>
+    <style>
+      @media (max-width: 720px) { .header-space { height: 0px; min-height: 0px;
+      } .email-wrapper { width: 100%; min-width: unset; background-color:
+      #ffffff; } .main-img { display: block; width: 100%; text-align: center; }
+      .main-text { display: block; width: 100%; margin-bottom: 0; } .email-text
+      { padding: 0 40px 20px; } .main-btn { margin: 5px auto 10px; }
+      .order-table { background-color: #fbfbfb; } .order-table-block tr {
+      display: table; width: 100%; } .order-table-block tr td { display: block;
+      margin-bottom: 5px; } .order-table-block.order-items tr td { display:
+      table-cell; } .email-foot { background-color: #ffffff; line-height: 16px;
+      } .email-foot .email-foot-divider { width: 95%; margin: 0 auto 20px;
+      border-bottom: 1px solid #888989; } }
+    </style>
+  </head>
+
+  <body
+    style="
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+      font-family: sans-serif;
+      background-color: #f2f3f5;
+    "
+  >
+    <table
+      bgcolor="#f2f3f5"
+      width="100%"
+      height="100%"
+      style="table-layout: fixed"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+      lang="en"
+    >
+      <tbody>
+        <tr class="header-space">
+          <td></td>
+        </tr>
+        <tr align="center">
+          <td style="padding: 0">
+            <table
+              class="email-wrapper"
+              border="0"
+              cellspacing="0"
+              cellpadding="0"
+            >
+              <tbody
+                style="background-image: url('{{front_url}}/static/images/pricing/header-background.jpg'); background-size: 100%; background-repeat: no-repeat"
+              >
+                <tr style="border: none">
+                  <td
+                    style="
+                      text-align: center;
+                      width: 720px;
+                      height: 200px;
+                      padding: 0;
+                    "
+                  >
+                    <img
+                      alt="Savvy"
+                      src="{{front_url}}/static/logo/logo-black-new.png"
+                      height="56"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0" class="email-body">
+                    <table
+                      width="100%"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 100%"
+                    >
+                      <tbody>
+                        <tr style="height: 100px; line-height: 20px">
+                          <td style="padding: 0 60px 10px" colspan="2">
+                            <table
+                              width="100%"
+                              border="0"
+                              cellspacing="0"
+                              cellpadding="0"
+                              style="width: 100%"
+                            >
+                              <tbody>
+                                <tr style="height: 100px">
+                                  <td style="display: table; padding: 0">
+                                    <span class="main-text">
+                                      <p
+                                        style="
+                                          font-size: 16px;
+                                          line-height: 27px;
+                                          color: #3e3f44cc;
+                                          font-weight: bold;
+                                          font-family: montserrat, 'Google Sans',
+                                            sans-serif;
+                                          line-height: 30px;
+                                          padding: 0 8px;
+                                        "
+                                      >
+                                        Hi
+                                        {{recipient.display_name}},
+                                      </p>
+                                      <p
+                                        style="
+                                          margin-top: 20px;
+                                          font-size: 16px;
+                                          line-height: 20px;
+                                          color: #3e3f44cc;
+                                          font-weight: bold;
+                                          font-family: montserrat, 'Google Sans',
+                                            sans-serif;
+                                          padding: 0 8px;
+                                        "
+                                      >
+                                        I wanted to be the first to welcome you
+                                        to the Savvy team.
+                                      </p>
+                                      <p
+                                        style="
+                                          margin-top: 20px;
+                                          font-size: 16px;
+                                          line-height: 22px;
+                                          color: #757575;
+                                          font-family: montserrat, 'Google Sans',
+                                            sans-serif;
+                                          padding: 0 8px;
+                                        "
+                                      >
+                                        My name is Michelle and I'm one of the
+                                        specialists here at Savvy. To get you
+                                        started, I thought I'd send over some
+                                        more information that you can check out
+                                        at your convenience.
+                                      </p>
+                                      <p
+                                        style="
+                                          margin-top: 60px;
+                                          margin-bottom: 0px;
+                                          position: relative;
+                                        "
+                                      >
+                                        <a
+                                          href="https://video.savvyworks.com/acq?id={{fws_id}}&utm_source=email"
+                                          target="_blank"
+                                        >
+                                          <img
+                                            style="display: inline-block"
+                                            alt="Savvy-video-1"
+                                            src="{{front_url}}/static/images/email/video_poster_1.jpg"
+                                            width="100%"
+                                          />
+                                        </a>
+                                      </p>
+                                      <table
+                                        style="
+                                          margin-top: 40px;
+                                          padding: 0px;
+                                          border-spacing: 0px;
+                                        "
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td style="width: 50%; padding: 0">
+                                              <span
+                                                style="
+                                                  display: inline-block;
+                                                  padding-right: 4px;
+                                                "
+                                              >
+                                                <a
+                                                  href="https://video.savvyworks.com/acq?id={{fws_id}}&utm_source=email"
+                                                  target="_blank"
+                                                >
+                                                  <img
+                                                    alt="Savvy-video-2"
+                                                    src="{{front_url}}/static/images/email/video_poster_2.jpg"
+                                                    width="100%"
+                                                  />
+                                                </a>
+                                              </span>
+                                            </td>
+                                            <td style="width: 50%; padding: 0">
+                                              <span
+                                                style="
+                                                  display: inline-block;
+                                                  padding-left: 4px;
+                                                "
+                                              >
+                                                <a
+                                                  href="https://video.savvyworks.com/acq?id={{fws_id}}&utm_source=email"
+                                                  target="_blank"
+                                                >
+                                                  <img
+                                                    alt="Savvy-video-3"
+                                                    src="{{front_url}}/static/images/email/video_poster_3.jpg"
+                                                    width="100%"
+                                                  />
+                                                </a>
+                                              </span>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <p
+                                        style="
+                                          font-size: 24px;
+                                          line-height: 30px;
+                                          color: #3e3f44;
+                                          font-weight: bold;
+                                          font-family: montserrat, 'Google Sans',
+                                            sans-serif;
+                                          text-align: center;
+                                          margin: 32px 72px 48px;
+                                        "
+                                      >
+                                        Check out our
+                                        <a
+                                          style="color: #4055c5; font-size: 24px; font-weight: bold; font-family: montserrat, 'Google Sans', sans-serif;"
+                                          href="https://video.savvyworks.com/acq?id={{fws_id}}&utm_source=email"
+                                        >FAQ</a>
+                                        to see some of the commonly asked
+                                        questions
+                                      </p>
+                                      <p
+                                        style="
+                                          margin-top: 0px;
+                                          font-size: 16px;
+                                          line-height: 22px;
+                                          color: #757575;
+                                          font-family: montserrat, 'Google Sans',
+                                            sans-serif;
+                                          padding: 0 8px;
+                                        "
+                                      >
+                                        As a next step, simply go to your
+                                        account and select a plan to get
+                                        started. If you have any additional
+                                        questions, feel free to reply and I'll
+                                        be happy to answer any questions you
+                                        have to get started.
+                                      </p>
+                                      <p
+                                        style="
+                                          margin-top: 20px;
+                                          font-size: 16px;
+                                          line-height: 20px;
+                                          color: #3e3f44cc;
+                                          font-weight: bold;
+                                          font-family: montserrat, 'Google Sans',
+                                            sans-serif;
+                                          padding: 0 8px;
+                                        "
+                                      >
+                                        Looking forward to making some great
+                                        content together!
+                                      </p>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0">
+                    <span
+                      style="
+                        display: block;
+                        background-color: #e1eaff;
+                        background-image: linear-gradient(
+                          to bottom right,
+                          #effcf9,
+                          #e1eaff
+                        );
+                        height: 240px;
+                      "
+                    >
+                      <table
+                        style="
+                          width: 100%;
+                          border-spacing: 0px;
+                          border-collapse: collapse;
+                          height: 240px;
+                        "
+                      >
+                        <tr>
+                          <td style="width: 45%; padding: 0">
+                            <p
+                              style="
+                                margin-top: 0px;
+                                margin-bottom: 0px;
+                                text-align: right;
+                                padding-right: 20px;
+                              "
+                            >
+                              <img
+                                style="display: inline-block"
+                                alt="avatar"
+                                src="{{front_url}}/static/images/email/avatar.png"
+                                width="120"
+                              />
+                            </p>
+                          </td>
+                          <td style="width: 55%; padding: 0">
+                            <span
+                              style="display: inline-block; padding-left: 20px"
+                            >
+                              <p
+                                style="
+                                  margin-top: 0px;
+                                  margin-bottom: 0px;
+                                  font-size: 42px;
+                                  line-height: 42px;
+                                  color: #3e3f44;
+                                  font-weight: bold;
+                                  font-family: montserrat, 'Google Sans',
+                                    sans-serif;
+                                "
+                              >
+                                Michelle
+                              </p>
+                              <p
+                                style="
+                                  margin-top: 0px;
+                                  font-size: 26px;
+                                  line-height: 26px;
+                                  color: #3e3f44;
+                                  font-family: montserrat, 'Google Sans',
+                                    sans-serif;
+                                "
+                              >
+                                Savvy Specialist
+                              </p>
+                              <p
+                                style="
+                                  margin-top: 0px;
+                                  margin-bottom: 0px;
+                                  font-size: 14px;
+                                  line-height: 16px;
+                                  font-family: montserrat, 'Google Sans',
+                                    sans-serif;
+                                  color: #757575;
+                                "
+                              >
+                                Michelle@savvyworks.com
+                              </p>
+                              <p
+                                style="
+                                  margin-top: 0px;
+                                  margin-bottom: 0px;
+                                  font-size: 14px;
+                                  line-height: 16px;
+                                  font-family: montserrat, 'Google Sans',
+                                    sans-serif;
+                                  color: #757575;
+                                "
+                              >
+                                www.savvyworks.com
+                              </p>
+                            </span>
+                          </td>
+                        </tr>
+                      </table>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  class="email-foot"
+                  style="
+                    text-align: center;
+                    height: 40px;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                  "
+                >
+                  <td
+                    style="
+                      font-size: 11px;
+                      line-height: 12px;
+                      padding: 5px 20px;
+                      color: #888989;
+                      font-family: Roboto, sans-serif;
+                    "
+                  >
+                    <span>
+                      <table
+                        style="
+                          width: 100%;
+                          border-spacing: 0px;
+                          border-collapse: collapse;
+                        "
+                      >
+                        <tr>
+                          <td style="width: 50%; padding: 0">
+                            <p style="color: #999999">
+                              Savvy © 2022 Fancy Pants Group
+                            </p>
+                          </td>
+                          <td style="width: 50%; padding: 0">
+                            <p>
+                              <img
+                                style="
+                                  display: inline-block;
+                                  margin-right: 10px;
+                                  margin-bottom: 0px;
+                                  margin-top: 0px;
+                                  border-radius: 50%;
+                                "
+                                alt="icon"
+                                src="{{front_url}}/static/social_platform_icons/linkedin.png"
+                                width="20"
+                              />
+                              <img
+                                style="
+                                  display: inline-block;
+                                  margin-right: 10px;
+                                  margin-bottom: 0px;
+                                  margin-top: 0px;
+                                "
+                                alt="icon"
+                                src="{{front_url}}/static/social_platform_icons/pinterest.png"
+                                width="20"
+                              />
+                              <img
+                                style="
+                                  display: inline-block;
+                                  margin-right: 10px;
+                                  margin-bottom: 0px;
+                                  margin-top: 0px;
+                                "
+                                alt="icon"
+                                src="{{front_url}}/static/social_platform_icons/twitter.png"
+                                width="20"
+                              />
+                              <img
+                                style="
+                                  display: inline-block;
+                                  margin-right: 10px;
+                                  margin-bottom: 0px;
+                                  margin-top: 0px;
+                                "
+                                alt="icon"
+                                src="{{front_url}}/static/social_platform_icons/google_plus.png"
+                                width="20"
+                              />
+                              <img
+                                style="
+                                  display: inline-block;
+                                  margin-right: 10px;
+                                  margin-bottom: 0px;
+                                  margin-top: 0px;
+                                "
+                                alt="icon"
+                                src="{{front_url}}/static/social_platform_icons/facebook.png"
+                                width="20"
+                              />
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+
+</html> --}}
